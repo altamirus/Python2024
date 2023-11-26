@@ -19,7 +19,7 @@ def somar():
 
 
 somar()
-'''
+
 # Parametros e Argumentos
 
 
@@ -31,3 +31,16 @@ def ola(nome, qtd):
 ola('Marcos', 5)
 ola('Maria', 10)
 ola('Miriam', 3)
+
+'''
+
+# Default = Aquele que voce define o valor no parametro
+# non-Default = Aquele que voce nao define o valor no parametro
+
+
+def welcome(nome='Miriam', qtd=6):
+    print(f' Ola {nome}')
+    print(f' Temos {qtd} laptops em estoque')
+
+
+welcome('Altamiro', 5)
