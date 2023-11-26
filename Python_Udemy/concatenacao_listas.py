@@ -16,9 +16,13 @@ print(por2)
 print(por3)
 print(porLetras)
 
-# Unpacking Lists
+# Unpacking Lists (Desempacotar listas)
 
-# Armazenar mais de uma informacao em variaveis
-# Manter a sequencia ddos dados em uma variavel
+produtos = ['arroz', 'feijao', 'laranja', 'Batata',  5, 6, 7, 8]
 
-produtos = ['arroz', 'feijao', 'laranja', 'laranja']
+item1, item2, *outros, item8 = produtos
+
+print(item1)
+print(item2)
+print(item8)
+print(*outros)
