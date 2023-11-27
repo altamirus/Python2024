@@ -38,8 +38,19 @@ print(cidades)
 # Retirar itens
 cidades.pop(0)
 print(cidades)
-'''
-
 # Sort itens # Organiza em ordem alfabetica
 cidades.pop()
 print(cidades)
+'''
+
+# Agregando duas listas com o Zip
+# Ou seja o indice-1 da 1 lista
+# Junto com o indice-1 da 2 lista
+
+cores = ['Verde', 'Amarelo', 'Azul', 'Branco']
+valores = [10, 20, 30, 40,]
+
+duaslistas = zip(cores, valores)
+
+
+print(list(duaslistas))
