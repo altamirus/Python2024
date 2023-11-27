@@ -20,6 +20,6 @@ print(duas_tuples)
 cores_list.append('Roxo')
 print(cores_list)
 
-# List sim e possivel inserir, remover, modificar
-# Tuples nao e possivel inserir, remover, modificar
+# List sim e possivel inserir, remover, modificar(+ memori - agilidade)
+# Tuples nao e possivel inserir, remover, modificar (+ rapdo - memoria)
 # Gera um erro -->cores_tuples.append('roxo')
