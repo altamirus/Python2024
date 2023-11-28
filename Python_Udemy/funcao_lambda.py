@@ -4,7 +4,7 @@
 # Muito ultilizado dentro de outras funcoes
 # codigo mais 'Clean'
 
-
+'''
 # Outro exemplo-1:
 def somar(x):
     return x + 10
@@ -27,3 +27,13 @@ def somar30(x, y): return x + y * 2
 
 
 print(somar30(4, 6))
+
+'''
+
+
+def somar(x):
+    def result(x): return x + 10
+    return result(x) * 4
+
+
+print(somar(2))
