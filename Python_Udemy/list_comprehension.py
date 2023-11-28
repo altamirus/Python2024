@@ -19,3 +19,21 @@ print()
 # Pesquisando com a letra N
 frutas2 = [item for item in frutas1 if 'n' in item]
 print(frutas2)
+
+
+# Testando List Comprehension
+#
+#
+valores = []
+
+for x in range(6):
+    valores.append(x * 10)
+print(valores)
+
+print()
+print('#################')
+
+# Funciona assim: rodar 6x dentro da range de 5 em 5 ate contar 6x
+# Jogando tudo resultado dentro de 'valores'
+valores = [x * 5 for x in range(6)]
+print(valores)
