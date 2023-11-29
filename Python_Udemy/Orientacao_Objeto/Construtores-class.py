@@ -1,34 +1,38 @@
+from datetime import datetime
 # Python Object-Oriented Programming
 # Construtores-classes
 # utilizadas para criar objetos(instances)
 # Objetos sao partes dentro de uma class (instancias)
 # classes sao utilizadas para agrupar dados e funcoes, podendo reutilizar
 
+
 class Funcionarios:
-    def __init__(self, nome, sobrenome, data_nascimento):
+    def __init__(self, nome, sobrenome, ano_nascimento):
         self.nome = nome
         self.sobrenome = sobrenome
-        self.data_nascimento = data_nascimento
+        self.ano_nascimento = ano_nascimento
 
     def nome_completo(self):
         return self.nome + ' ' + self.sobrenome
 
-    def nome_completo_date(self):
-        return self.nome + ' ' + self.sobrenome + ' ' + self.data_nascimento
+    def idade_funcionario(self):
+        ano_atual = datetime.now().year
+        self.ano_nascimento = int(ano_atual - self.ano_nascimento)
+        return self.ano_nascimento
 
     # Todo constructor deve usar __init__ parainiciar
     # Deve usar self
 
 
 # criando o objeto
-usuario1 = Funcionarios('Altamiro', 'Pereira', '07/05/1979')
-usuario2 = Funcionarios('Altamirando', 'Pereira', '08/05/1979')
+usuario1 = Funcionarios('Altamiro', 'Pereira', 1978)
+usuario2 = Funcionarios('Altamirando', 'Pereira', 1979)
+usuario3 = Funcionarios('Miriam', 'Pereira', 1980)
 
 
-print(usuario1.nome_completo())
-print(Funcionarios.nome_completo_date(usuario1))
-print(usuario2.nome_completo_date())
+print(Funcionarios.idade_funcionario(usuario1))
 print(Funcionarios.nome_completo(usuario2))
+print(Funcionarios.idade_funcionario(usuario3))
 
 # criando os parametros do usuario1
 # usuario1.nome = 'Altamiro'
